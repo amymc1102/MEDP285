@@ -12,14 +12,12 @@
 
 <style>
 
-#container
   h1 {
   color: white;
 }
 h2 {
   color: black;
 }
-#container
 body {
   background-image: url(img/cloud.jpg);
   background-repeat: no-repeat;
@@ -37,6 +35,7 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+#container
 header {
   padding: .5em;
   background-color: #ddd;/*dddddd 00ffcc*/
@@ -56,36 +55,42 @@ header {
       #main {
         border: 2px solid black;
       }
-       .boxLeft {
+       .box1 {
         margin: 15px;
-        padding: 20px 10px 20px 15px;
+        padding: 2rem;
         border: 2px solid #999;
-        background-color: red;
+        background-color: yellow;
         width: 400px;
-        float: left;
         position: absolute;
+        float: left;
+        top: 3000px;
+        left: 600px;
         z-index: 100;
       }
 
-      .boxRight {
+      .box2 {
         margin: 15px;
         padding: 2rem;
         border: 2px solid #999;
-        background-color: green;
+        background-color: yellow;
         width: 400px;
+        position: absolute;
         float: right;
-         position: absolute;
+        top: 3000px;
+        left: 600px;
         z-index: 100;
       }
 
-      .boxBoth {
+      .box3 {
         margin: 15px;
         padding: 2rem;
         border: 2px solid #999;
-        background-color: blue;
+        background-color: yellow;
         width: 400px;
+        position: absolute;
         clear: both;
-         position: absolute;
+        top: 3000px;
+        left: 600px;
         z-index: 100;
       }
 
@@ -104,22 +109,22 @@ header {
 
     <div id="main">
 
-    <div style="position: relative; border: 1px solid">
+    <div style="position: absolute; border: 1px solid">
 
-    <div class="boxLeft">
+    <div class="box1">
       <p>
         <h2> The Machine Stops </h2>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus augue ac ipsum pellentesque commodo. Sed pellentesque porttitor urna vitae faucibus. Etiam laoreet mi nec leo fermentum egestas. Nam elit urna, tincidunt at cursus quis, maximus ac purus. Nulla feugiat urna eu eros ornare, non sagittis enim congue. Proin feugiat non felis ut interdum. Maecenas pretium efficitur aliquet. Duis scelerisque, magna nec vulputate ultricies, risus diam fermentum ante, quis mattis nunc dui non dolor. In condimentum velit in libero pulvinar aliquet. Nulla facilisi.
       </p>
     </div>
 
-    <div class="boxRight">
+    <div class="box2">
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus augue ac ipsum pellentesque commodo. Sed pellentesque porttitor urna vitae faucibus. Etiam laoreet mi nec leo fermentum egestas. Nam elit urna, tincidunt at cursus quis, maximus ac purus. Nulla feugiat urna eu eros ornare, non sagittis enim congue. Proin feugiat non felis ut interdum. Maecenas pretium efficitur aliquet. Duis scelerisque, magna nec vulputate ultricies, risus diam fermentum ante, quis mattis nunc dui non dolor. In condimentum velit in libero pulvinar aliquet. Nulla facilisi.
       </p>
     </div>
 
-    <div class="boxBoth">
+    <div class="box3">
           <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus augue ac ipsum pellentesque commodo. Sed pellentesque porttitor urna vitae faucibus. Etiam laoreet mi nec leo fermentum egestas. Nam elit urna, tincidunt at cursus quis, maximus ac purus. Nulla feugiat urna eu eros ornare, non sagittis enim congue. Proin feugiat non felis ut interdum. Maecenas pretium efficitur aliquet. Duis scelerisque, magna nec vulputate ultricies, risus diam fermentum ante, quis mattis nunc dui non dolor. In condimentum velit in libero pulvinar aliquet. Nulla facilisi.
       </p>
