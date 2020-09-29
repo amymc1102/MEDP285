@@ -11,6 +11,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
 <style>
+
+#container
   h1 {
   color: white;
 }
@@ -34,9 +36,7 @@ body {
   */
   font-family: 'Open Sans', sans-serif;
 }
-
-
-#container 
+ 
 header {
   padding: .5em;
   background-color: #ddd;/*dddddd 00ffcc*/
@@ -56,44 +56,40 @@ header {
       #main {
         border: 2px solid black;
       }
-       .boxAbsolute1 {
+       .boxLeft {
         margin: 15px;
-        padding: 2rem;
+        padding: 20px 10px 20px 15px;
         border: 2px solid #999;
-        background-color: pink;
+        background-color: red;
         width: 400px;
-        position: absolute;
-        top: 3000px;
-        left: 600px;
         float: left;
-        z-index: 100;
       }
-     
-       .boxAbsolute2 {
+      .boxRight {
         margin: 15px;
         padding: 2rem;
         border: 2px solid #999;
-        background-color: pink;
+        background-color: green;
         width: 400px;
-        position: absolute;
-        top: 3000px;
-        left: 600px;
         float: right;
-        z-index: 100;
       }
-
-       .boxAbsolute3 {
+      .boxBoth {
         margin: 15px;
         padding: 2rem;
         border: 2px solid #999;
-        background-color: pink;
+        background-color: blue;
+        width: 400px;
+        clear: both;
+      }
+      .boxAbsolute {
+        margin: 15px;
+        padding: 2rem;
+        border: 2px solid #999;
+        background-color: yellow;
         width: 400px;
         position: absolute;
         top: 3000px;
         left: 600px;
-        clear: both;
         z-index: 100;
-      }
    
    </style>
   
@@ -112,23 +108,30 @@ header {
 
     <div style="position: relative; border: 1px solid">
 
-    <div class="boxAbsolute1">
+    <div class="boxLeft">
       <p>
         <h2> The Machine Stops </h2>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus augue ac ipsum pellentesque commodo. Sed pellentesque porttitor urna vitae faucibus. Etiam laoreet mi nec leo fermentum egestas. Nam elit urna, tincidunt at cursus quis, maximus ac purus. Nulla feugiat urna eu eros ornare, non sagittis enim congue. Proin feugiat non felis ut interdum. Maecenas pretium efficitur aliquet. Duis scelerisque, magna nec vulputate ultricies, risus diam fermentum ante, quis mattis nunc dui non dolor. In condimentum velit in libero pulvinar aliquet. Nulla facilisi.
       </p>
     </div>
-    <div class="boxAbsolute2">
+
+    <div class="boxRight">
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus augue ac ipsum pellentesque commodo. Sed pellentesque porttitor urna vitae faucibus. Etiam laoreet mi nec leo fermentum egestas. Nam elit urna, tincidunt at cursus quis, maximus ac purus. Nulla feugiat urna eu eros ornare, non sagittis enim congue. Proin feugiat non felis ut interdum. Maecenas pretium efficitur aliquet. Duis scelerisque, magna nec vulputate ultricies, risus diam fermentum ante, quis mattis nunc dui non dolor. In condimentum velit in libero pulvinar aliquet. Nulla facilisi.
       </p>
     </div>
-    <div class="boxAbsolute3">
+
+    <div class="boxBoth">
           <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus augue ac ipsum pellentesque commodo. Sed pellentesque porttitor urna vitae faucibus. Etiam laoreet mi nec leo fermentum egestas. Nam elit urna, tincidunt at cursus quis, maximus ac purus. Nulla feugiat urna eu eros ornare, non sagittis enim congue. Proin feugiat non felis ut interdum. Maecenas pretium efficitur aliquet. Duis scelerisque, magna nec vulputate ultricies, risus diam fermentum ante, quis mattis nunc dui non dolor. In condimentum velit in libero pulvinar aliquet. Nulla facilisi.
       </p>
     </div>
 
+  <div class="boxAbsolute">
+          <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus augue ac ipsum pellentesque commodo. Sed pellentesque porttitor urna vitae faucibus. Etiam laoreet mi nec leo fermentum egestas. Nam elit urna, tincidunt at cursus quis, maximus ac purus. Nulla feugiat urna eu eros ornare, non sagittis enim congue. Proin feugiat non felis ut interdum. Maecenas pretium efficitur aliquet. Duis scelerisque, magna nec vulputate ultricies, risus diam fermentum ante, quis mattis nunc dui non dolor. In condimentum velit in libero pulvinar aliquet. Nulla facilisi.
+      </p>
+    </div>
     
     </div>
 
