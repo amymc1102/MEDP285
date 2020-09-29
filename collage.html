@@ -17,7 +17,6 @@ h1 {
 }
 
 * {box-sizing: border-box;}
-
 body {
   background-image: url(img/cloud.jpg);
   background-repeat: no-repeat;
@@ -34,8 +33,20 @@ body {
   */
   font-family: "Open Sans", sans-serif;
 }
+#container {
+  max-width: 90%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid gray;
+  border-top: 0;
+  line-height: 1.5em;
+}
 
-#container 
+#header-container 
 header {
   padding: .5em;
   background-color: #ddd;/*dddddd 00ffcc*/
@@ -83,7 +94,15 @@ header {
         clear: both;
         z-index: 100;
       }
-
+ .boxRightBottom {
+        margin: 15px;
+        padding: 2rem;
+        border: 2px solid #999;
+        background-color: grey;
+        width: 400px;
+        float: right bottom;
+       z-index: 100;
+      }
 
    </style>
   
@@ -91,12 +110,15 @@ header {
 
   <body>
 
-    <div id="container">
+<div id="container">
+</div> <!-- This closes body container div -->
+
+    <div id="header-container">
 
     <header>
       <center> <h1>The Digital Age</h1> </center>
     </header>
-</div> <!-- This closes container div-->
+</div> <!-- This closes header-container div-->
 
     <div id="main">
 
@@ -120,10 +142,16 @@ header {
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus augue ac ipsum pellentesque commodo. Sed pellentesque porttitor urna vitae faucibus. Etiam laoreet mi nec leo fermentum egestas. Nam elit urna, tincidunt at cursus quis, maximus ac purus. Nulla feugiat urna eu eros ornare, non sagittis enim congue. Proin feugiat non felis ut interdum. Maecenas pretium efficitur aliquet. Duis scelerisque, magna nec vulputate ultricies, risus diam fermentum ante, quis mattis nunc dui non dolor. In condimentum velit in libero pulvinar aliquet. Nulla facilisi.
       </p>
     </div>
+
+
+    <div class="boxRightBottom">
+          <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus augue ac ipsum pellentesque commodo. Sed pellentesque porttitor urna vitae faucibus. Etiam laoreet mi nec leo fermentum egestas. Nam elit urna, tincidunt at cursus quis, maximus ac purus. Nulla feugiat urna eu eros ornare, non sagittis enim congue. Proin feugiat non felis ut interdum. Maecenas pretium efficitur aliquet. Duis scelerisque, magna nec vulputate ultricies, risus diam fermentum ante, quis mattis nunc dui non dolor. In condimentum velit in libero pulvinar aliquet. Nulla facilisi.
+      </p>
+    </div>
+    
  </div><!-- this closes main div -->
 
 
 </body>
 </html>
-
-  
