@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+	<title> My first MEDP 285 page </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="description" content="Homepage for my web 1 class"/>
+	<meta name="author" content="Amy" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="img/flower.ico" type="image/x-icon">
+<link rel="icon" href="img/flower.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	 
+	<style>
+		body {
+  background-color: rgba(255, 99, 71, 0.2);
+}
+
+{
+  color: black;
+}
+
+h1 {
+  color: violet;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+</style>
+</head>
+
+	<body>
+    <div class="navbar">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">About Me</a></li>
+  <li><a href="https://amymchen.tumblr.com/" target="_blank">Blog</a></li>
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">Projects
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="slideshow.html">Slideshow</a>
+    <a href="video.html">Video Series Project</a>
+    <a href="collage.html">Layered Collage</a>
+  </div>
+  </div> 
+</div>
+
+	<header id="home">
+	<h1>Amy's MEDP 285 Homepage </h1>
+<!-- Picture Tag -->
+ <picture>
+          <source media="(min-width: 1280px)" srcset="img/flowers1280.jpg">
+          <source media="(min-width: 960px)" srcset="img/flowers960.jpg">
+          <img src="img/flowers480.jpg" alt="VR app about Venezuela">
+        </picture>
+
+        	<!-- img tag
+        	<img srcset="img/pinkflowers480.jpg 480w,
+                   img/pinkflowers960.jpg 960w,
+                   img/pinkflowers.jpg 1280w"
+           sizes="(max-width: 640px) 480px, 960px, 1280px"
+           src="img/pinkflowers" alt="Photo of Pink Flowers"> --> 
+          
+</header>
+</div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+	</body>
+	</html>
