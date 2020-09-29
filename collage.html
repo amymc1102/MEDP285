@@ -35,7 +35,10 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-#container 
+* {box-sizing: border-box;}
+      #container {
+        border: 2px solid black;
+      }
 header {
   padding: .5em;
   background-color: #ddd;/*dddddd 00ffcc*/
@@ -82,19 +85,15 @@ header {
         clear: both;
         z-index: 100;
       }
-      .boxAbsolute {
+      .boxBoth {
         margin: 15px;
         padding: 2rem;
         border: 2px solid #999;
-        background-color: orange;
+        background-color: pink;
         width: 400px;
-        position: absolute;
-        top: 3000px;
-        left: 600px;
-        float: right;
+        clear: both;
         z-index: 100;
       }
-
    </style>
   
   </head>
@@ -110,10 +109,11 @@ header {
 
     <div id="main">
 
-    <div style="position: relative; border: 1px solid">
+    <div style="position: relative; border: 10px solid">
 
     <div class="boxLeft">
       <p>
+        <h2> The Machine Stops </h2>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus augue ac ipsum pellentesque commodo. Sed pellentesque porttitor urna vitae faucibus. Etiam laoreet mi nec leo fermentum egestas. Nam elit urna, tincidunt at cursus quis, maximus ac purus. Nulla feugiat urna eu eros ornare, non sagittis enim congue. Proin feugiat non felis ut interdum. Maecenas pretium efficitur aliquet. Duis scelerisque, magna nec vulputate ultricies, risus diam fermentum ante, quis mattis nunc dui non dolor. In condimentum velit in libero pulvinar aliquet. Nulla facilisi.
       </p>
     </div>
