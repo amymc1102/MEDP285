@@ -10,144 +10,99 @@
 <link rel="shortcut icon" href="img/flower.ico" type="image/x-icon">
 <link rel="icon" href="img/flower.ico" type="image/x-icon">
 <!-- CSS stylesheet -->
- <link rel="stylesheet" type="text/css" href="indexstyle.css">
-<link rel="stylesheet" href="indexstyle.css">
-<!-- Navigation Bar-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-   
-  <style>
-  body 
-{
-  color: black;
+ <link rel="stylesheet" type="text/css" href="index.css">
+<style>
+  body {
+background-image: url(img/pink.png);
+background-size: 2000px;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
 }
 
-h1 {
-  color: #8601AF;
-}
 
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.navbar a {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-.dropdown .dropbtn {
-  cursor: pointer;
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
-  background-color: #EFD4F7;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-.show {
-  display: block;
-}
-
-</style>
+  </style>
 </head>
 
-<body>
-  
-<div class="navbar">
-  <a href="index.html">Home</a>
-  <a href="about.html">About Me</a>
-  <a href="https://amymchen.tumblr.com/" target="_blank">Blog</a>
-  <div class="dropdown">
-  <button class="dropbtn" onclick="myFunction()">Projects
-    <i class="fa fa-caret-down"></i>
-  </button>
-  <div class="dropdown-content" id="myDropdown">
-    <a href="slideshow.html">Slideshow</a>
-    <a href="video.html">Video Series Project</a>
-    <a href="amycollage.html">Layered Collage</a>
-  </div>
- </div>
-</div>
-</div>
-
-  <header id="home">
+ <body>
+        <!-- navigation-->
+        <nav id="navbar">
+            <div class="navbar">
+                <li><a href="index.html">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="https://amymchen.tumblr.com" target="_blank">blog</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        <a href="projects.html">projects</a>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="slideshow.html"> Slideshow </a>
+                        <a href="video.html"> Video Series </a>
+                        <a href="amycollage.html"> Collage </a>
+                        <a href="csspandemic.html"> CSS Grid 1</a>
+                        <a href="cssgrid.html"> CSS Grid 2 </a>
+                        <a href="animation.html"> Animation </a>
+                        <a href="javascript.html"> Javascript</a>
+                        <a href="project.html"> Final Project Idea </a>
+                        <a href="global.html"> Global Greens NYC</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
          
+  
+<div style="padding: 20px;">
 
-       <!-- Img Tag -->
-  <img srcset="img/purpleflowers480.jpg 480w,
+    <header id="home"> <!-- has your header + title-->
+  <!-- Img Tag -->
+  <center> <img srcset="img/purpleflowers480.jpg 480w,
                 img/purpleflowers960.jpg 960w,
                 img/purpleflowers1280.jpg 1280w," sizes="(max-width: 480px) 100vw,
                (max-width: 960px) 90vw,
                (max-width: 1280px) 70vw,
-               1280px" src="img/purpleflowers480.jpg" alt="photo of purple flowers">
-            <h1>Amy's MEDP 285 Page </h1>
-            <h2> Welcome </h2>
-          
-          <!-- picture tag
-           <picture>
-          <source media="(min-width: 1280px)" srcset="img/purpleflowers960.jpg">
-          <source media="(min-width: 960px)" srcset="img/purpleflowers480.jpg">
-          <img src="img/purpleflowers1280.jpg" alt="photo of purple flowers">
-        </picture> -->
-</header>
-</div>
+               1280px" src="img/purpleflowers480.jpg" alt="photo of purple flowers"> </center>
+    </header>
+    <hr />
 
-<script>
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
+    <div id="message1"></div>
+    <div id="message2"></div>
+    <div id="message3"></div>
 
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-  var myDropdown = document.getElementById("myDropdown");
-    if (myDropdown.classList.contains('show')) {
-      myDropdown.classList.remove('show');
-    }
-  }
-}
-</script>
+  
+         
+            <section id="about">
+                <h1> About Me </h1>
+                <p> Hello, I'm Amy. I'm currently a Media Studies major with a concentration in Emerging Media. </p>
+            </section>
+
+            <hr />
+
+         </div>
+        <br />
+        <div class="footer">
+            <p> Amy's MEDP 285 Web Page </p>
+        </div>
+
+      <script>
+      //JavaScript methods are the actions that can be performed on objects.
+      //A JavaScript method is a property containing a function definition.
+      //The browser is a Window Object that has properties and methods
+      //https://www.w3schools.com/jsref/obj_window.asp
+      setTimeout( //method calls a function or evaluates an expression after a specified number of milliseconds.
+        function message1() { //the function that will be excuted
+          document.getElementById("message1").innerHTML = "<h1>Hey! Welcome to my page!</h1> " + "<p>Today is " + Date() + "</p>";
+        }, 500); //the time of the window
+      setTimeout(
+        function message2() {
+          document.getElementById("message2").innerHTML = "<h2>Check out my work</h2>" + "<p> Click On Projects </p>";
+        }, 1000);
+      setTimeout(
+        function message3() {
+          document.querySelector("#message3").innerHTML = "<h3>Hope you Enjoy!</h3>" + "<p>Thanks for checking out my site! </p>";
+        }, 2000);
+        // List of JavaScript Built-In Methods:
+        // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Methods_Index
+    </script>
+  
   </body>
   </html>
