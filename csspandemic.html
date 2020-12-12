@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Covid-19 Pandemic Timeline grid</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Favicon -->
+<link rel="shortcut icon" href="img/flower.ico" type="image/x-icon">
+<link rel="icon" href="img/flower.ico" type="image/x-icon">
+     <link rel="stylesheet" type="text/css" href="grid2.css">
+  <style>
+    main {
+      display: flex; /* introduces flexbox layout */
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .column {
+      flex: 1; /*spreads divs across page evenly and all equal heights by default */
+      padding: 10px;
+      height: 300px;
+    }
+    @media (max-width: 600px) {
+      main {
+        flex-direction: column;
+      }
+    }
+
+
+    </style>
+</head>
+
+<body>
+  <div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="about.html">About Me</a>
+  <a href="https://amymchen.tumblr.com/" target="_blank">Blog</a>
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">Projects
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="slideshow.html">Slideshow</a>
+    <a href="video.html">Video Series Project</a>
+    <a href="amycollage.html">Layered Collage</a>
+    <a href="cssgrid.html">Grid 2: Election</a>
+  </div>
+ </div>
+</div>
+</div>
+
+  <header>
+   <center> <h1>Covid-19 Pandemic Timeline in the United States/New York 2020</h1>  <a href="https://www.investopedia.com/historical-timeline-of-covid-19-in-new-york-city-5071986" target="_blank">Link to my article reference </a>  
+    <div> <img src="img/mask.gif" alt="girl mask gif" width="60" height="60"> <img src="img/mask2.gif" alt="boy mask gif" width="60" height="60">  </center></div>
+  </header>
+  <main>
+    <div class="column" style="background-color:rgba(208, 189, 193, 1);"><h4>First Reported Case of Covid-19 Case in Washington State.</h4>
+     <img src="img/covid1.jpg" alt="Covid airport picture" width="270" height="200" ></div>
+
+    <div class="column" style="background-color:rgba(221, 238, 226, 1);"><h5> March 6:  21 Passengers on California Cruise Ship Test Positive.</h5>  <img src="img/cruiseshipcovid.jpg" alt="Covid cruiseship picture" width="270" height="200" > </div>
+
+    <div class="column" style="background-color:rgba(247, 238, 212, 1);"><h5>March 13 WHO/Trump Declares Covid-19 a national Emergency. Travel Ban on Non-US Citizens traveling from Europe. <img src="img/trumpcovid.jpg" alt="Trump Declares National Emergency" width="270" height="200" >  </div>
+
+    <div class="column" style="background-color:rgba(208, 189, 193, 1);"><h5>March 14: First two Covid-19 deaths in NYS. March 16: NYC Public Schools Close. March 17: NYC bars & restaurants close for dine in. March 22: NYS pause program begins. March 27: Trump signs CARES Act.</h5> <img src="img/nyc.jpg" alt="NYC shutdown covid-19" width="270" height="200" > 
+    </div>
+
+      <div class="column" style="background-color:rgba(222, 243, 247, 1);"><h5>April 10:NYS has highest Covid cases. April 15: Face masks required. April 30, Gov.Cuomo closes NYC subway from 1 a.m to 5 a.m. May 1: All schools closed for remainder of year. </h5>
+         <img src="img/masksigns.png" alt="Mask signs" width="270" height="200" > </div>
+
+        <div class="column" style="background-color:rgba(208, 189, 193, 1);"><h5>June 8: NYC begins Phase 1 reopening, June 22: NYC begins Phase 2 reopening. U.S Covid-19 deaths surpass 130,000. July 6: Phase 3 reopening, July 19: Phase 4 reopening without indoor dining/bars. </h5>
+       <iframe width="270" height="170" src="https://www.youtube.com/embed/KURAR8Fhvzk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+         <div class="column" style="background-color:rgba(250, 236, 253, 1);"><h5>September 2: Gyms reopen, September 9: Malls reopen in NYC with 50% capacity, September 29, Elementary students return to Public School Classrooms in NYC. September 30:Indoor dining in NYC resumes with 25% capacity.</h5><img src="img/restaurants.jpg" alt="Mask signs" width="270" height="200" ></div>
+
+          <div class="column" style="background-color:rgba(255, 219, 219, 1);"><h5>October 2: President and first lady Melania Trump test positive for Covid-19.</h5>
+          <iframe width="270" height="200" src="https://www.youtube.com/embed/KdXLARNcHIM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+           <div class="column" style="background-color:rgba(221, 238, 226, 1);"><h5>October 4-5: Mayor De Blasio will close 9 zip codes 
+            in Brooklyn and Queens if approved. 
+         </h5>  <img src="img/deblasio.jpg" alt="Deblasio announces closure" width="500" height="200" ></div>
+
+          <div class="column" style="background-color:rgba(219, 238, 255, 1);"><h5>NYC Covid cases chart from March-October 2020.</h5>  <img src="img/covidchart.png" alt="NYC covid chart" width="500" height="200" ></div>
+   </main>
+ </div>
+
+
+
+  <script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+</body>
+
+</html>
