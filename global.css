@@ -10212,7 +10212,7 @@ body {
   background-image: url(assets/img/nyc.svg);
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-size: cover;
+  background-size: 1000px;
 }
 .masthead h1 {
   font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
