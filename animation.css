@@ -1,0 +1,286 @@
+body 
+
+* { box-sizing: border-box; }
+body {
+background-color: rgba(0, 0, 0, 1);
+background-size: 2000px;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+font-family:Roboto, Sans-serif;
+}
+
+{ overflow: auto; }
+@keyframes animone {
+  0% {
+    opacity: 0;
+  }
+
+  45% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+}
+
+@keyframes animtwo {
+  0% {
+    opacity: 0;
+  }
+
+  45% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+}
+@keyframes animthree {
+  0% {
+    opacity: 0;
+  }
+
+  45% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+}
+@keyframes animfour {
+  0% {
+    opacity: 0;
+  }
+
+  45% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+}
+@keyframes animfive {
+  0% {
+    opacity: 0;
+  }
+
+  45% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+}
+@keyframes animsix {
+  0% {
+    opacity: 0;
+  }
+
+  45% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+}
+@keyframes animseven {
+  0% {
+    opacity: 0;
+  }
+
+  45% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+}
+@keyframes animeight {
+  0% {
+    opacity: 0;
+  }
+
+  45% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+}
+@keyframes animnine {
+  0% {
+    opacity: 0;
+  }
+
+  45% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+}
+
+@keyframes animten {
+      0% {
+        position: absolute;
+        bottom: -10%;
+        opacity: 0;
+      }
+      75% {
+        position: absolute;
+        bottom: 25%;
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+
+/* rem is root em */
+.first-text {
+  font-size: 3em;
+  position: absolute;
+  left: 25%;
+  top: 10%;
+  color: #CD4E18;
+  opacity: 0;
+  animation-name: animone;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+ }
+
+.second-text {
+  font-size: 2em;
+  position: absolute;
+  top: 20%;
+  left: 3%;
+  color: #FFFFFF;
+  opacity: 0;
+  animation-name: animtwo;
+  animation-delay: 2s;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+
+.third-text {
+  font-size: 3em;
+  position: absolute;
+  left: 27%;
+  top: 25%;
+  color: #F6F320;
+  opacity: 0;
+  animation-name: animthree;
+  animation-delay: 3s;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+
+.fourth-text {
+  font-size: 2em;
+  position: absolute;
+  top: 34%;
+  left: 3%;
+  color: #FCBDBD;
+  opacity: 0;
+  animation-name: animfour;
+  animation-delay: 3.5s;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+.fifth-text {
+  font-size: 2em;
+  position: absolute;
+  top: 45%;
+  left: 25%;
+  color: #FFFFFF;
+  opacity: 0;
+  animation-name: animfive;
+  animation-delay: 4s;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+
+.sixth-text {
+  font-size: 1.5em;
+  position: absolute;
+  left: 15%;
+  top: 55%;
+  color: #EBEBEB;
+  opacity: 0;
+  animation-name: animsix;
+  animation-delay: 4.5s;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+
+.seventh-text {
+  font-size: 2em;
+  position: absolute;
+  top: 62%;
+  left: 10%;
+  color: #999999;
+  opacity: 0;
+  animation-name: animseven;
+  animation-delay: 5s;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+
+.eighth-text {
+  font-size: 2em;
+  position: absolute;
+  left: 3%;
+  top: 70%;
+  color: #EDA85A;
+  opacity: 0;
+  animation-name: animeight;
+  animation-delay: 5.5s;
+  animation-duration: 8.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+
+.ninth-text {
+  font-size: 2em;
+  position: absolute;
+  top:  78%;
+  left: 3%;
+  color: #999999;
+  opacity: 0;
+  animation-name: animnine;
+  animation-delay: 6s;
+  animation-duration: 8.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+
+.tenth-text {
+  font-size: 3em;
+  position: absolute;
+  left: 23%;
+  bottom: 20%;
+  color: #F0EBA3;
+  opacity: 0;
+  animation-name: animten;
+  animation-delay: 6.5s;
+  animation-duration: 9s;
+   animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
