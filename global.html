@@ -103,7 +103,40 @@
                 </div>
                 <!-- Project Two Row-->
                 <div class="row justify-content-center no-gutters">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-02.jpg" alt="" /></div>
+                    <div class="col-lg-6"><form action="" method="post" id="budget">
+    <fieldset>
+      <p>vegetables: <input type="text" name="vegetables" id="vegetables" placeholder="vegetables" required /></p>
+      <p>fruits: <input type="text" name="fruits" id="fruits" placeholder="fruits" required /></p>
+      <p>other: <input type="text" name="other" id="other" placeholder="other" required /></p>
+      <p><input type="submit" value="Calculate" id="submit" /></p>
+      <p>Total: <input type="text" name="total" id="total" placeholder="Total Cost" /></p>
+    </fieldset>
+  </form>
+
+<!-- By placing JavaScript at the bottom of the page, it does not slow the loading of the HTML content -->
+<script>
+function calculate() {
+    'use strict'; //strict mode is a way to opt in to a restricted variant of JavaScript
+    //let rent = document.getElementById('rent').value;
+  let vegetables = document.querySelector('#vegetables').value;
+    //let bills = document.getElementById('bills').value;
+  let fruits = document.querySelector('#fruits').value;
+    //let allowance = document.getElementById('allowance').value;
+  let other = document.querySelector('#other').value;
+    // parseInt() function parses a string and returns an integer (each input type is text)
+    let total = parseInt(vegetables) + parseInt(fruits) + parseInt(other);
+    //document.getElementById('total').value = total;
+  document.querySelector('#total').value = total;
+    return false;
+}
+//initialize function
+function init() {
+      'use strict';
+      //document.getElementById('budget').onsubmit = calculate;
+    document.querySelector('#budget').onsubmit = calculate;
+}
+window.onload = init;
+</script></div>
                     <div class="col-lg-6 order-lg-first">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
